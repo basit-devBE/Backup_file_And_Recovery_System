@@ -221,9 +221,18 @@ bool BackupManager::createIncrementalBackup(const BackupOptions& options) {
         // Copy only changed files
         size_t processedFiles = 0;
         for (const auto& filePath : filesToBackup) {
-            std::string fullSourcePath = Utils::joinPaths(options.sourcePath, filePath);
+            // filePath is already a full path from FileTracker
+            std::string fullSourcePath = filePath;
             std::string relativePath = Utils::getRelativePath(options.sourcePath, fullSourcePath);
             std::string destPath = Utils::joinPaths(backupDir, relativePath);
+            
+            // Skip directories - they will be created as needed when copying files
+            if (Utils::isDirectory(fullSourcePath)) {
+                processedFiles++;
+                float progress = 30.0f + (processedFiles * 60.0f / filesToBackup.size());
+                updateProgress("Copying changed files", progress);
+                continue;
+            }
             
             // Create destination directory if needed
             Utils::createDirectoryRecursive(Utils::getParentDirectory(destPath));

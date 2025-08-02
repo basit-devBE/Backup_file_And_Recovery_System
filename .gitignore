@@ -113,3 +113,5 @@ conan.lock
 config.local.*
 settings.local.*
 test_scenario/
+test_data/
+backups/

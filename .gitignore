@@ -1,0 +1,115 @@
+# Build directories and artifacts
+build/
+bin/
+obj/
+out/
+
+# Compiled binaries
+*.exe
+*.out
+*.app
+backup_system
+
+# Object files
+*.o
+*.obj
+*.lo
+*.slo
+*.ko
+
+# Libraries
+*.a
+*.la
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# Visual Studio / MSBuild
+*.vcxproj*
+*.sln
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+*.vscode/
+
+# Test and demo artifacts
+simple_test/
+simple_backup/
+simple_restore/
+compressed_backup/
+compressed_restore/
+test_backups/
+test_scenario/
+restored_*/
+demo_test/
+demo_backup/
+demo_restore/
+*_backup/
+*_restore/
+
+# Log files
+*.log
+*.tmp
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor files
+*~
+*.swp
+*.swo
+*.orig
+.vscode/
+.idea/
+*.sublime-*
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Package managers
+node_modules/
+.npm
+.yarn/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# vcpkg
+vcpkg_installed/
+.vcpkg-root
+
+# Conan
+conandata.yml
+conanfile.txt
+conanfile.py
+conanbuildinfo.*
+conan.lock
+
+# Local configuration
+config.local.*
+settings.local.*
+test_scenario/

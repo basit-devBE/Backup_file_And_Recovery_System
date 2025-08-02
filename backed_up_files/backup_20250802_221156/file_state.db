@@ -1,0 +1,34 @@
+{
+  "files": [
+    {
+      "checksum": "a1bb81affa5b5867b2bc1b82457f6465cba669294c5163b899a6a811f8836685",
+      "isDirectory": false,
+      "lastModified": "2025-02-20 00:11:25",
+      "path": "/home/basit/Desktop/github_projects/help/index.html",
+      "size": 13787
+    },
+    {
+      "checksum": "180438d9e0b3a8149f948687d5ba2f969634ea4f9b084e54235556ca304bf7bf",
+      "isDirectory": false,
+      "lastModified": "2025-02-20 00:01:17",
+      "path": "/home/basit/Desktop/github_projects/help/wrong.html",
+      "size": 14046
+    },
+    {
+      "checksum": "281b3cd42105381e379cea67f3547185cff8474a1c6b917c39c45a69b03865ba",
+      "isDirectory": false,
+      "lastModified": "2025-02-20 00:10:03",
+      "path": "/home/basit/Desktop/github_projects/help/.vscode/settings.json",
+      "size": 46
+    },
+    {
+      "checksum": "",
+      "isDirectory": true,
+      "lastModified": "2025-02-20 00:10:03",
+      "path": "/home/basit/Desktop/github_projects/help/.vscode",
+      "size": 0
+    }
+  ],
+  "timestamp": "2025-08-02 22:11:56",
+  "version": "1.0"
+}

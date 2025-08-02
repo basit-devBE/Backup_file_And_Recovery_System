@@ -12,14 +12,15 @@ cd build
 
 REM Try vcpkg first if available
 if exist "C:\vcpkg\scripts\buildsystems\vcpkg.cmake" (
-    echo Using vcpkg toolchain...
-    cmake .. -DCMAKE_TOOLCHAIN_FILE=C:\vcpkg\scripts\buildsystems\vcpkg.cmake
+    echo Using vcpkg toolchain at C:\vcpkg...
+    cmake .. -DCMAKE_TOOLCHAIN_FILE=C:\vcpkg\scripts\buildsystems\vcpkg.cmake -A x64
 ) else if exist "C:\tools\vcpkg\scripts\buildsystems\vcpkg.cmake" (
-    echo Using vcpkg toolchain...
-    cmake .. -DCMAKE_TOOLCHAIN_FILE=C:\tools\vcpkg\scripts\buildsystems\vcpkg.cmake
+    echo Using vcpkg toolchain at C:\tools\vcpkg...
+    cmake .. -DCMAKE_TOOLCHAIN_FILE=C:\tools\vcpkg\scripts\buildsystems\vcpkg.cmake -A x64
 ) else (
     echo No vcpkg found, using system libraries...
-    cmake ..
+    echo Note: If you have vcpkg installed elsewhere, please update this script
+    cmake .. -A x64
 )
 
 REM Build the project

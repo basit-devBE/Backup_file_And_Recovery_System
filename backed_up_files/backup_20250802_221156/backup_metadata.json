@@ -1,0 +1,47 @@
+{
+  "backups": [
+    {
+      "backupId": "732e23f1-0337-4c3f-94a9-7244c304790a",
+      "backupType": "full",
+      "compressedSize": 6929,
+      "compressionLevel": 6,
+      "compressionMethod": "zlib",
+      "encrypted": false,
+      "encryptionMethod": "",
+      "files": [
+        {
+          "checksum": "281b3cd42105381e379cea67f3547185cff8474a1c6b917c39c45a69b03865ba",
+          "compressed": true,
+          "compressedSize": 43,
+          "encrypted": false,
+          "lastModified": "2025-02-20 00:10:03",
+          "relativePath": ".vscode/settings.json",
+          "size": 46
+        },
+        {
+          "checksum": "180438d9e0b3a8149f948687d5ba2f969634ea4f9b084e54235556ca304bf7bf",
+          "compressed": true,
+          "compressedSize": 3629,
+          "encrypted": false,
+          "lastModified": "2025-02-20 00:01:17",
+          "relativePath": "wrong.html",
+          "size": 14046
+        },
+        {
+          "checksum": "a1bb81affa5b5867b2bc1b82457f6465cba669294c5163b899a6a811f8836685",
+          "compressed": true,
+          "compressedSize": 3257,
+          "encrypted": false,
+          "lastModified": "2025-02-20 00:11:25",
+          "relativePath": "index.html",
+          "size": 13787
+        }
+      ],
+      "parentBackupId": "",
+      "sourcePath": "/home/basit/Desktop/github_projects/help",
+      "timestamp": "2025-08-02 22:11:56",
+      "totalSize": 27879
+    }
+  ],
+  "version": "1.0"
+}

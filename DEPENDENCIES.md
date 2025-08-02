@@ -83,6 +83,19 @@ brew install cmake zlib openssl nlohmann-json
 
 #### Windows
 
+##### Option 0: Automatic Installation (Easiest)
+```powershell
+# Download and run our automatic installer (in PowerShell as Administrator)
+# Full installation:
+.\install_dependencies_windows.ps1
+
+# Or simple installation:
+.\install_dependencies_simple.ps1
+
+# Skip Visual Studio if already installed:
+.\install_dependencies_windows.ps1 -SkipVisualStudio
+```
+
 ##### Option 1: Using vcpkg (Recommended)
 ```powershell
 # Install vcpkg (in PowerShell as Administrator)
@@ -110,15 +123,24 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocola
 choco install cmake
 choco install git
 choco install visualstudio2022buildtools
+
+# Note: For ZLIB, OpenSSL, and nlohmann-json, use vcpkg or manual installation
+# Chocolatey doesn't have reliable packages for these development libraries
 ```
 
 ##### Option 3: Manual Installation
 1. **Install Visual Studio 2019/2022** with C++ development tools
 2. **Download and install CMake** from https://cmake.org/download/
 3. **Download libraries manually:**
-   - ZLIB: https://www.zlib.net/
-   - OpenSSL: https://slproweb.com/products/Win32OpenSSL.html
-   - nlohmann/json: https://github.com/nlohmann/json/releases
+   - **ZLIB**: Download from https://www.zlib.net/ or use pre-compiled binaries from https://www.winimage.com/zLibDll/
+   - **OpenSSL**: https://slproweb.com/products/Win32OpenSSL.html
+   - **nlohmann/json**: https://github.com/nlohmann/json/releases
+
+4. **Set environment variables:**
+```powershell
+$env:ZLIB_ROOT = "C:\path\to\zlib"
+$env:OPENSSL_ROOT_DIR = "C:\path\to\openssl"
+```
 
 ##### Option 4: Using MSYS2/MinGW-w64
 ```bash
